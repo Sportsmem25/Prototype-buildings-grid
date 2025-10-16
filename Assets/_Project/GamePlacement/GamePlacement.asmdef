@@ -1,0 +1,18 @@
+{
+    "name": "GamePlacement",
+    "rootNamespace": "",
+    "references": [
+        "GUID:72597d5c3c454924fa9152292f74d2dc",
+        "GUID:a36a3e1d513f1f04a9a965de0d010a5d",
+        "GUID:75469ad4d38634e559750d17036d5f7c"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

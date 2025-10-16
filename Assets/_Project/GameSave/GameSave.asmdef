@@ -1,0 +1,16 @@
+{
+    "name": "GameSave",
+    "rootNamespace": "",
+    "references": [
+        "GUID:72597d5c3c454924fa9152292f74d2dc"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

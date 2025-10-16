@@ -1,0 +1,26 @@
+{
+  "buildings": 
+  [
+    {
+      "id": "House",
+      "displayName": "Дом",
+      "spritePath": "Sprites/House",
+      "width": 5,
+      "height": 5
+    },
+    {
+      "id": "LargeHouse",
+      "displayName": "Большой дом",
+      "spritePath": "Sprites/LargeHouse",
+      "width": 5,
+      "height": 5
+    },
+    {
+      "id": "Cafe",
+      "displayName": "Кафе",
+      "spritePath": "Sprites/Cafe",
+      "width": 5,
+      "height": 4
+    }
+  ]
+}
