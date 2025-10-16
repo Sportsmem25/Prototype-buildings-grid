@@ -97,7 +97,6 @@ public class PlacementController : MonoBehaviour
         var sr = go.AddComponent<SpriteRenderer>();
         sr.sprite = Resources.Load<Sprite>(activeConfig.spritePath);
         sr.color = Color.white;
-
         var bi = go.AddComponent<BuildingInstance>();
         bi.id = activeConfig.id;
         bi.gridX = cell.x;

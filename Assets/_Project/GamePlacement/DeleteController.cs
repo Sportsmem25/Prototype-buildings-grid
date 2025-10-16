@@ -28,18 +28,18 @@ public class DeleteController : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0))
         {
-            // проверяем есть ли здание в этой клетке
+            // проверка есть ли здание в этой клетке
             var found = saveService.FindBuildingAt(cell.x, cell.y);
             if (found != null)
             {
-                // очищаем сетку
+                // очистка сетку
                 grid.SetOccupied(found.x, found.y, found.w, found.h, false);
 
-                // удаляем объект в сцене (по имени/координатам)
+                // удаление объект в сцене (по имени/координатам)
                 var go = GameObject.Find(found.instanceName);
                 if (go != null) Destroy(go);
 
-                // удаляем из сохранения
+                // удаление из сохранения
                 saveService.RemoveBuildingByName(found.instanceName);
             }
             else

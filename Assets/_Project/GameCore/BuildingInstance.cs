@@ -7,5 +7,4 @@ public class BuildingInstance : MonoBehaviour
     public int gridY;
     public int height;
     public int width;
-
 }

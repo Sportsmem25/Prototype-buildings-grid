@@ -12,7 +12,6 @@ public class SaveService : MonoBehaviour
     {
         path = Path.Combine(Application.persistentDataPath, "SaveData.json");
         Debug.Log($"Save path initialized: {path}");
-        //Load();
     }
 
     /// <summary>

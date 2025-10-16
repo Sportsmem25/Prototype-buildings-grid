@@ -8,7 +8,6 @@ public class BuildingConfig
     public string spritePath;
     public int width;
     public int height;
-    
 }
 
 [Serializable]

@@ -4,8 +4,8 @@ public class GridManager : MonoBehaviour
 {
     [Header("Grid settings")]
     public Grid unityGrid;
-    public int columns = 20;
-    public int rows = 12;
+    public int columns = 40;
+    public int rows = 30;
 
     private bool[,] occupied;
 

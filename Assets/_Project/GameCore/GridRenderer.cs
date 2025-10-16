@@ -26,10 +26,8 @@ public class GridRenderer : MonoBehaviour
         if (parentLines != null) DestroyImmediate(parentLines);
         parentLines = new GameObject("GridLines");
         parentLines.transform.SetParent(transform, false);
-
         var mat = lineMaterial ?? new Material(Shader.Find("Sprites/Default"));
         mat.color = gridColor;
-
         int cols = gridManager.columns;
         int rows = gridManager.rows;
         var g = gridManager.unityGrid;
@@ -46,7 +44,6 @@ public class GridRenderer : MonoBehaviour
             lr.endWidth = lineWidth;
             lr.positionCount = 2;
             lr.useWorldSpace = true;
-
             Vector3Int startCell = new Vector3Int(x, 0, 0);
             Vector3 start = g.CellToWorld(startCell);
             Vector3Int endCell = new Vector3Int(x, rows, 0);
@@ -55,7 +52,6 @@ public class GridRenderer : MonoBehaviour
             // подвинем линии по центру клетки, чтобы совпадало с CellToWorld(center)
             start += new Vector3(cellSize.x * 0.0f, cellSize.y * 0.0f, 0f);
             end += new Vector3(cellSize.x * 0.0f, 0f, 0f);
-
             lr.SetPosition(0, start);
             lr.SetPosition(1, end);
             lr.sortingOrder = 100;
@@ -72,16 +68,13 @@ public class GridRenderer : MonoBehaviour
             lr.endWidth = lineWidth;
             lr.positionCount = 2;
             lr.useWorldSpace = true;
-
             Vector3Int startCell = new Vector3Int(0, y, 0);
             Vector3 start = g.CellToWorld(startCell);
             Vector3Int endCell = new Vector3Int(cols, y, 0);
             Vector3 end = g.CellToWorld(endCell);
-
             lr.SetPosition(0, start);
             lr.SetPosition(1, end);
             lr.sortingOrder = 100;
         }
     }
-
 }
